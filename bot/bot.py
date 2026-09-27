@@ -21,9 +21,10 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 from dotenv import load_dotenv
 from database_neon import Database
-from config import BOT_TOKEN, NEON_CONNECTION_STRING, TELEGRAM_API_BASE, WEBAPP_URL
 
+# Загружаем .env, но основные настройки берём из bot/config.py.
 load_dotenv()
+from config import BOT_TOKEN, NEON_CONNECTION_STRING, TELEGRAM_API_BASE, WEBAPP_URL
 
 if not BOT_TOKEN or BOT_TOKEN.startswith("ВСТАВЬ_"):
     raise ValueError("❌ BOT_TOKEN не заполнен: открой bot/config.py и вставь токен бота.")
