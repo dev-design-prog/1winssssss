@@ -15,4 +15,4 @@ NEON_CONNECTION_STRING = "postgresql://neondb_owner:npg_zDLBbS3R4sJV@ep-small-ri
 TELEGRAM_API_BASE = "https://bot.catup.lol"
 
 # URL Mini App / web-приложения
-WEBAPP_URL = "https://onewin-bot-5x1w.onrender.com"
+WEBAPP_URL = "https://onewin-htal.onrender.com"
