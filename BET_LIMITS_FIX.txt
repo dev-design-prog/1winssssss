@@ -1,0 +1,5 @@
+Bet limits finalized:
+- Minecraft: minimum 100 ⭐, maximum 5000 ⭐
+- Crash: minimum 100 ⭐, maximum 5000 ⭐
+- Frontend allows manual integer entry; while editing values below 100 can be typed, then normalize to 100 after idle/blur. Values above 5000 are capped at 5000.
+- Backend is authoritative: values below 100 are normalized to 100; values above 5000 are rejected.

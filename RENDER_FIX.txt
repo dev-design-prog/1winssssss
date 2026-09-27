@@ -1,0 +1,14 @@
+RENDER FIX
+==========
+The code now accepts either:
+- NEON_CONNECTION_STRING
+- DATABASE_URL
+
+IMPORTANT: Render does not get the value from .env or render.yaml automatically.
+In Render -> Service -> Environment, add:
+BOT_TOKEN = your Telegram bot token
+NEON_CONNECTION_STRING = your Neon PostgreSQL connection string
+
+Then redeploy.
+
+The start command is aligned with bot/main.py and the API binds to Render's PORT.

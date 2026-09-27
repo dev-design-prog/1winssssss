@@ -1,0 +1,7 @@
+1) Открой bot/config.py
+2) Вставь BOT_TOKEN
+3) Вставь NEON_CONNECTION_STRING из Neon
+4) TELEGRAM_API_BASE уже установлен: https://bot.catup.lol
+5) В Render больше не нужно добавлять BOT_TOKEN/NEON_CONNECTION_STRING как Environment Variables.
+
+Важно: config.py содержит секреты. Не публикуй его в открытом репозитории.

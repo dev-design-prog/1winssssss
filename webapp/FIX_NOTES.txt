@@ -1,0 +1,8 @@
+
+
+TGS HOTFIX v15:
+- Restored missing Crash rocket TGS initialization (embedded JSON, independent from loading sticker).
+- Loading screen uses the supplied DuckHappy.tgs embedded as plain Lottie JSON; static file is also deployed.
+- Kept UFC TGS constants and deployed all TGS assets under /static/tgs.
+- Crash/loading TGS primary rendering no longer depends on gzip decompression or static routing.
+- Loading confetti is guarded to play once per load.

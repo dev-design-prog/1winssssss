@@ -1,0 +1,15 @@
+Visual update applied and hardened:
+- Deposit promo is a single clickable image card using the provided "ПОПОЛНЕНИЕ" image.
+- Image is embedded directly into both webapp HTML files as a data URI, so it does not depend on /static image delivery or browser cache.
+- No overlay text, icon, star, or decorative pseudo-elements are shown on the card.
+- Image fills the entire card with object-fit: cover and inherits the card radius.
+- openDepositModal() remains the click action.
+- Game-card images remain full-cover backgrounds with clipped rounded corners.
+
+
+V3 UI/TGS fixes:
+- Restored Bodymovin/Lottie dependency and CDN fallback for TGS playback.
+- Preserved and duplicated all provided TGS assets under webapp/static/tgs/ for reliable serving.
+- Loading screen uses DuckHappy.tgs from /static/tgs/.
+- Loading confetti is one-shot only: particles never respawn and the burst runs once per page load.
+- Global and loading backgrounds changed to a stronger animated cyan/purple/pink neon effect.
